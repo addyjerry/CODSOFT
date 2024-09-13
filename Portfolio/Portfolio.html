@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      html,
+      body {
+        box-sizing: border-box;
+        font-size: 21px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      #darkmode {
+        background-color: black;
+        color: white;
+      }
+      h1 {
+        text-align: center;
+      }
+      .about_section {
+        margin: 2rem;
+        display: flex;
+        gap: 10rem;
+      }
+      .description {
+        width: 20rem;
+        border-radius: 12px;
+        box-shadow: rgb(65, 61, 61) 0 5px 15px;
+        padding: 10px;
+        font-size: 30px;
+      }
+      .picture img {
+        width: 20rem;
+        border-radius: 10rem;
+      }
+      .skills {
+        display: flex;
+        font-size: 30px;
+        gap: 10rem;
+        justify-content: center;
+      }
+      .frontend {
+        border-radius: 10px;
+        border: 2px solid black;
+        width: 15rem;
+        text-align: center;
+      }
+      .backend {
+        border-radius: 10px;
+        border: 2px solid black;
+        width: 15rem;
+        text-align: center;
+      }
+
+      ul li {
+        list-style: none;
+      }
+      h2 {
+        text-align: center;
+      }
+      #Resumé {
+        text-align: center;
+        background-color: red;
+        width: 10rem;
+        height: 2.5rem;
+        padding: 5px;
+        font-size: 30px;
+        font-weight: 500;
+        border: 3px solid white;
+        border-radius: 10px;
+        position: relative;
+        left: 40%;
+        margin: 4rem;
+      }
+      #Resumé a {
+        color: white;
+        text-decoration: none;
+      }
+      .worked_on {
+        display: flex;
+        gap: 5rem;
+        text-align: center;
+      }
+      .worked_on img {
+        width: 7rem;
+      }
+      #jectone {
+        display: block;
+        width: 17rem;
+      }
+      #jecttwo {
+        display: block;
+        width: 10rem;
+      }
+      #jectthree {
+        display: block;
+        width: 10rem;
+      }
+
+      footer p {
+        text-align: center;
+      }
+      footer a {
+        float: right;
+        margin-top: -3rem;
+      }
+
+      .contact_list {
+        justify-content: center;
+        display: flex;
+        margin-top: 5rem;
+      }
+      .contact_list img {
+        width: 4rem;
+        margin: 2px;
+      }
+
+      /* MOBILE RESPONSIVE DESIGN*/
+      @media (max-width: 600px) {
+        html,
+        body {
+          box-sizing: border-box;
+          font-size: 10px;
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #intro {
+          text-align: center;
+          font-size: 3rem;
+          margin-left: 0rem;
+        }
+        .about_section {
+          margin: 1rem;
+          display: block;
+        }
+        .description {
+          width: 35rem;
+          border-radius: 12px;
+          font-size: 3rem;
+          margin: 0rem;
+        }
+        .picture {
+          justify-content: center;
+          margin: 3rem;
+        }
+        .picture img {
+          width: 20rem;
+          border-radius: 10rem;
+          margin-left: 3rem;
+        }
+        .skills {
+          display: block;
+          font-size: 3rem;
+          justify-content: center;
+          margin-top: 2rem;
+        }
+        .frontend {
+          width: 35rem;
+          text-align: center;
+          margin: 1rem;
+        }
+        .backend {
+          width: 35rem;
+          text-align: center;
+          margin: 1rem;
+        }
+        #Resumé {
+          text-align: center;
+          width: 25rem;
+          height: 4.5rem;
+          padding: 5px;
+          font-size: 3rem;
+          font-weight: 400;
+          border-radius: 10px;
+          margin-left: -12rem;
+        }
+        h2 {
+          margin-left: 6rem;
+          text-align: center;
+          font-size: 3rem;
+        }
+        .worked_on {
+          display: block;
+          font-size: 3rem;
+          text-align: center;
+        }
+        .worked_on img {
+          width: 25rem;
+        }
+        #jectone {
+          display: block;
+          width: 30rem;
+          margin: 2rem;
+        }
+        #jecttwo {
+          display: block;
+          width: 30rem;
+          margin: 2rem;
+        }
+        #jectthree {
+          display: block;
+          width: 30rem;
+          margin: 2rem;
+        }
+        .contact_list {
+          justify-content: center;
+          display: flex;
+          margin-top: 5rem;
+          margin-left: 2rem;
+        }
+        .contact_list img {
+          width: 5rem;
+          margin: 2px;
+        }
+        h1 {
+          text-align: left;
+          margin-left: 4rem;
+        }
+
+        footer p {
+          text-align: center;
+          margin-left: 0rem;
+        }
+        footer .link {
+          text-align: center;
+        }
+        .link img {
+          margin-top: -4rem;
+          width: 30px;
+        }
+      }
+    </style>
+    <title>Jerry Bishop Addy</title>
+    <h1 id="intro">Welcome to my Portfolio Website</h1>
+
+    <hr />
+  </head>
+  <body>
+    <div class="about_section">
+      <div class="description">
+        <p>
+          I am Addy Bishop Jerry, a Frontend Engineer who is well-vested with
+          the frontend stack. I know how to use the basic frontend stack, which
+          are HTML,CSS and JAVASCRIPT. I also know how to use React js to help
+          create more advanced websites easier and faster
+        </p>
+      </div>
+      <div class="picture">
+        <img src="myimg.png" alt="myimage" />
+      </div>
+    </div>
+    <h2>SKILLS</h2>
+    <div class="skills">
+      <div class="frontend" id="darkmode">
+        <h3>FRONTEND</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JAVASCRIPT</li>
+          <li>REACT JS</li>
+        </ul>
+      </div>
+      <div class="backend" id="darkmode">
+        <h3>BACKEND</h3>
+        <ul>
+          <li>PHP</li>
+          <li>MYSQL</li>
+          <li>MONGO DB</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="Resumé">
+      <a href="My_Resumé.pdf" download="My Resumé">My Resumé</a>
+    </div>
+    <div class="projects">
+      <h2>My Projects</h2>
+      <div class="worked_on">
+        <div id="jectone">
+          <h4>Repairshop</h4>
+          <img src="Repairshop.PNG" alt="repair" />
+          <p>
+            This is a website that I created for my Uncle's repairshop for
+            electrical appliances
+          </p>
+        </div>
+        <div id="jecttwo">
+          <h4>Design</h4>
+          <img src="45bees.PNG" alt="bees" />
+          <p>
+            This is a website that I created to display and advertise my graphic
+            design skills
+          </p>
+        </div>
+        <div id="jectthree">
+          <h4>Portfolio</h4>
+          <a href="bee45.netlify.app"> <img src="bee45.PNG" alt="bee" /></a>
+          <p>This is the other website that I created as my Portfolio</p>
+        </div>
+      </div>
+    </div>
+    <footer id="darkmode">
+      <h1>CONTACT ME</h1>
+      <div class="contact_list">
+        <a href="https://www.linkedin.com/in/jerry-addy-193437249/">
+          <img src="linkedin.png" alt="linkedin"
+        /></a>
+        <a
+          href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlHmbDmKLJxbKqwSbkKHlvZxcHJwTsDCKnnmrZdKDhjtgjKKfHtLfZbVQQKFZSJKpKVjFL"
+        >
+          <img src="email.png" alt="email"
+        /></a>
+        <a href="https://x.com/JayCodes27?t=k513f8YOjzAOnOifSdw3mA&s=09">
+          <img src="twitter.jpg" alt="twitter"
+        /></a>
+      </div>
+      <p>© Copyright Addy Jerry</p>
+      <a href="bee45.netlify.app" class="link">
+        <img src="signaturesmall.png" alt="link to real Portfolio" />
+      </a>
+    </footer>
+  </body>
+</html>

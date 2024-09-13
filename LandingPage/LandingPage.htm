@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <style>
+      html,
+      body {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+          url(logo.jpg);
+        background-size: cover;
+        color: white;
+      }
+      .header_area {
+        display: flex;
+      }
+      .logo h1 {
+        font-size: 3rem;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .nav_bar {
+        margin-left: 17rem;
+      }
+      .nav_bar ul li:hover {
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        padding: 4px;
+        border-radius: 10px;
+      }
+      .nav_bar ul {
+        display: flex;
+        font-size: 2rem;
+        gap: 3rem;
+      }
+      .nav_bar ul li {
+        list-style: none;
+      }
+      .visit_me {
+        position: absolute;
+        text-align: center;
+        top: 45%;
+        transform: translateX(35rem);
+        justify-content: center;
+      }
+      .visit_me h2:hover {
+        background-color: red;
+      }
+      h2 {
+        width: 10rem;
+        height: 2.5rem;
+        border-radius: 10px;
+        padding: 5px;
+        text-align: center;
+        margin-left: -1rem;
+      }
+      .visit_me img {
+        width: 15rem;
+        margin-left: -8rem;
+      }
+      .visit_me h1 {
+        font-size: 3rem;
+        margin-left: -4rem;
+        margin-bottom: -4rem;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header_area">
+      <div class="logo">
+        <h1>Game Tournament</h1>
+      </div>
+      <div class="nav_bar">
+        <ul>
+          <li>Home</li>
+          <li>Join Tournament</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="visit_me">
+      <h1>Come and Play</h1>
+      <img src="SoccerPonob.png" alt="" />
+      <a href="#"> <h2>Visit Now</h2></a>
+    </div>
+  </body>
+</html>
